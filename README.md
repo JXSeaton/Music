@@ -10,4 +10,4 @@ This idea came to me when describing how I feel about programming to someone. I 
 
 Perhaps my brain is too analytical and this is not the way to access music. To disect it down and mathematically describe it. But my quest is to train myself to find the patterns in music. Make better sense of the noise. And I don't think that is too far from the core of what most people do when they learn to appreciate different music. That is why some can hear genius in *Animals as Leaders* and other people just hear a wall of sound. 
 
-If nothing else, hoefully this project gets me excited about discovering music.
+If nothing else, hopefully this project gets me excited about discovering music.
