@@ -1,4 +1,4 @@
-This is the song I made using Midica. The language seems more suited to my needs than SonicPi. There is less limitations on the size of the song and it has less of a focus on live music than SonicPi. The language uses music note and counts, which removes a lot of the more general programming setup that SonicPi requres too.
+This is the song I made using Midica. The language seems more suited to my needs than SonicPi. There is less limitations on the size of the song and it has less of a focus on live music than SonicPi. The language uses music notes and counts, which removes a lot of the more general programming setup that SonicPi requres too.
 
 The programming of this song is shit! This is not to be used as an example of my programming ability. There are many inefficiencies as I taught myself the basics of the language by starting to write the song without planning the program first. The programs structure is solely based on the sheet music I used as a guide. 
 
