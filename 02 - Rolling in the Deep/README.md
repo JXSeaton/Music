@@ -4,7 +4,7 @@ The programming of this song is shit! This is not to be used as an example of my
 
 The purpose of translating music via programming languages is for me to learn to better understand music via programming. This crappy program does serve as a good representation of my lack of deep understanding of music structure and patterns, and thus serves only as a starting line.
 
-My goal is to use my insights in programming to better understand, and more importantly hear, the sturucture of a song and identify common patterns. Ultimately, I would like to translate the songs independently of any sheet music.
+My goal is to use my insights in programming to better understand, and more importantly hear, the structure of a song and identify common patterns. Ultimately, I would like to translate the songs independently of any sheet music.
 
 ### Lessons from this song
 - I need more experience with other instruments. The sheet music lacked many details of the music and I depended upon reading the music by ear for many parts. I found that it was relatively easy to do this for piano, which i have played as a child. However, I was lost when it came to guitar and had little to guide me for the drums. Basic theory in these instruments would be beneficial and a familiarity of their sounds apart from other instruments.
