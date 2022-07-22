@@ -8,3 +8,8 @@ I chose SonicPi for the programming language because it was the only music focus
 - It honestly was not hard to listen to the song over and over again. I feared that I would end up hating the song. Because there are few enough songs that I inherently enjoy, this was a major concern for me. But familiarity with the song did not lessen the enjoyment. I found that a better appriciation for all the aspects of the song made me enjoy the song a little more. Which is my hope for this project.
 - I was surprised to find out that SonicPi is not well suited for creating music.
 - I did not add the drums to this piece. I was already at the limit of what i could do in SonicPi and my lack of familiarity with drums made the task too intimidating.
+
+
+### Notes:
+Sheet music used:
+[https://sheetmusic-free.com/blank-space-sheet-music-taylor-swift/](https://sheetmusic-free.com/blank-space-sheet-music-taylor-swift/)
