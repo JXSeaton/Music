@@ -1,4 +1,4 @@
-###Lessons learned
+### Lessons learned
 
 - Despite wanting to plan my music more and make it a better program, I still found this difficult. I don't really have a good understanding about how best to break up music. Many bars do repeat, but not so often that it seems efficient to make a function for a bar.
 - I have been breaking up the song by bars and having all the instruments in a bar. I don't know if that makes the most sense. The patterns will sometimes repeat just for one instrument. I think that helps to simutaniously meet the brains desire to hear something familiar and predictable and to hear something unexpected.
