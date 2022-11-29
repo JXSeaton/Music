@@ -1,0 +1,849 @@
+INSTRUMENTS
+	0  MARIMBA			Background Chimes
+	1  REED_ORGAN		Vocals
+	2  LEAD_SQUARE		Bass
+	3  LEAD_CHIFF		Extra
+	4  NYLON_GUITAR		Guitar
+	5  ELECTRIC_GRAND_PIANO		Vocals base
+	p  STANDARD			Drum
+		// hc = Electronic Drum Sound 2
+		// sd2 = Snare
+		// bd2 = base
+		// hhp = hi-hat
+		// sm = Electronic Drum Sound 3
+		// st = Electronic Drum Sound 1
+END
+
+* tempo 96
+
+FUNCTION backgroundChimes
+	// two bars
+	0	c+2		/8		v=75
+	0	c+2		/4
+	0	f+		/8
+	0	f+		/2
+	
+	0	a+		/8
+	0	a+		/4
+	0	f+		/8
+	0	f+		/2
+END
+
+FUNCTION drumsVerse1
+	// two bars
+	p	hc,bd2		/8.		v=115
+	p	bd2			/16
+	p	sd2			/8
+	p	bd2			/8
+	p	-			/4
+	p	sd2			/4
+	
+	p	bd2		/8.
+	p	bd2			/16
+	p	sd2			/8
+	p	bd2			/8
+	p	-			/8
+	p	bd2			/8
+	p	sd2			/4
+END
+FUNCTION drumsVerse2
+	// two bars
+	p	hhp,hc,bd2	/16		v=115
+	p	hhp			/16		q=2
+	p	hhp,bd2		/16
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	-			/4
+	p	hhp,sd2		/8
+	{
+		p	hhp			/16		q=2
+		p	hhp,bd2		/16
+	}	q=2
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	-			/8
+	p	hhp,bd2		/8
+	p	hhp,sd2		/8
+	p	hhp			/16		q=2
+END
+FUNCTION drumsVerse3
+	p	hc,bd2		/8.
+	p	sm,bd2		/16
+	p	sd2			/8
+	p	sm,bd2		/8
+	p	-			/4
+	p	st,sd2		/4
+	
+	p	sm,bd2		/8.
+	p	sm,bd2		/16
+	p	sd2			/8
+	p	sm,bd2		/8
+	p	-			/8
+	p	sm,bd2		/8
+	p	sd2			/4
+END
+FUNCTION drumsVerse4
+	p	hhp,hc,bd2	/16
+	p	hhp			/16		q=2
+	p	hhp,bd2		/16
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	-			/4
+	p	hhp,sd2		/8
+	p	hhp			/16		q=2
+	
+	p	hhp,bd2		/16
+	p	hhp			/16		q=2
+	p	hhp,bd2		/16
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	-			/8
+	p	hhp,bd2		/8
+	p	hhp,sd2		/8
+	p	hhp			/16		q=2
+END
+FUNCTION drumsPreChorus1
+	// two bars
+	p	hhp,hc,bd2	/8
+	p	hhp			/16
+	p	bd2			/16
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	hhp			/8		q=2
+	p	hhp,sd2		/8
+	p	hhp			/8
+	
+	p	hhp,bd2		/8
+	p	hhp			/16
+	p	bd2			/16
+	p	hhp,sd2		/8
+	p	hhp,bd2		/8
+	p	hhp			/8
+	p	hhp,bd2		/8
+	p	hhp,sd2		/8
+	p	hhp			/8
+END
+FUNCTION drumsPreChorus2
+	p	hhp,sd2,bd2	/8
+	p	hhp			/16
+	p	sd2,bd2		/16
+	p	hhp,sd2		/8
+	p	hhp,sd2,bd2	/8
+	p	hhp			/8
+	p	hhp,sd2		/8		q=2
+	p	hhp			/8
+	
+	p	hhp,sd2,bd2	/8
+	p	hhp			/16
+	p	sd2,bd2		/16
+	p	hhp,sd2		/8
+	p	hhp,sd2,bd2	/8
+	p	hhp			/8
+	p	hhp,sd2,bd2	/8
+	p	hhp,sd2		/8
+	p	hhp			/8
+END
+
+FUNCTION double		//(channel, note)
+	$[0] 	$[1]	/16
+	$[0] 	$[1]	/8.
+	$[0] 	$[1]	/16
+	$[0] 	$[1]	/8.
+END
+
+FUNCTION verse
+	// 1. Nice to meet you, where you
+	// 2. Cherry lips, crystal
+	1	-		/4		v=115
+	1	f		/16
+	1	f		/8.
+	CALL double(1, f)
+
+	// 1. been? I could show you incredible
+	// 2. skies; I could show you incredible
+	1	f		/4
+	1	g		/16
+	1	a		/8
+	1	a		/16+/16
+	1	g		/8
+	1	f		/16
+	1	g		/16
+	1	f		/16
+	1	g		/8
+
+	// 1. things; magic, madness, heaven
+	// 2. things; stolen kisses pretty
+	1	f		/16
+	1	d		/8.
+	1	f		/16
+	1	f		/8.
+	CALL double(1, f)
+
+	// 1. sin. Saw you there, and I thought
+	// 2. lies. You're the king, baby I'm your
+	1	f		/4
+	1	g		/16
+	1	a		/8
+	1	a		/16+/8
+	1	g		/16
+	1	g		/16+/16
+	1	f		/8.
+
+	// 1. "Oh my God, look at that face!
+	// 2. queen. Find out what you want,
+	1	bb-		/8
+	1	f		/8
+	1	f		/4
+	1	c		/16
+	1	c		/16
+	1	a		/8
+	1	a		/4
+
+	// 1. You look like my next mistake
+	// 2. be that girl for a month
+	1	bb-		/8
+	1	f		/8
+	1	f		/8.
+	1	c		/16
+	1	c		/8
+	1	a		/8
+	1	a		/4
+
+	// 1. Love's a game; want to play?
+	// 2. Wait, the worst is yet to come.
+	1	c		/8
+	1	f		/8
+	1	f		/4
+	1	c		/16
+	1	a		/8
+	1	a		/16+/8
+	1	bb		/16
+	1	a		/16
+
+	// 1. Eh.
+	// 2. Oh, no.
+	1	g		/2
+	1	-		/8
+	1	f		/8
+	1	-		/4
+
+	// 1. New money, suit and
+	// 2. Screaming, scrying, perfect
+	1	f		/4
+	CALL double(1, f)
+
+	// 1. tie; I can read you like a maga-
+	// 2. storms; I can make all the tables
+	1	f		/4
+	1	g		/16
+	1	a		/8
+	1	a		/16+/16
+	1	g		/16
+	1	g		/16
+	1	f		/16
+	1	g		/8
+	1	g		/8
+
+	// 1. -zine. Ain't it funny, rumors
+	// 2. turn. Rose garden filled with
+	1	f		/16
+	1	d		/8.
+	1	f		/16
+	1	f		/8.
+	CALL double(1, f)
+
+	// 1. fly, and I know you heard about
+	// 2. thorns; keep you second guessing like,
+	1	f		/4
+	1	g		/16
+	1	a		/8
+	1	a		/16+/16
+	1	g		/8
+	1	g		/16+/16
+	1	f		/16
+	1	f		/8
+
+	// 1. me. So hey, let's be friends. I'm
+	// 2. "Oh my God, who is she?"
+	1	bb-		/8
+	1	f		/8
+	1	f		/4
+	1	c		/8
+	1	a		/8
+	1	a		/8.
+	1	bb-		/16
+
+	// 1. dying to see how this one ends.
+	// 2. I get drunk on jealousy. But
+	1	bb-		/16
+	1	bb-		/16
+	1	f		/8
+	1	f		/8.
+	1	c		/16
+	1	c		/8
+	1	a		/8
+	1	a		/4
+
+	// 1. Grab your passport and my hand
+	// 2. you'll come back each time you leave, 'cause
+	1	c		/8
+	1	f		/16
+	1	f		/16+/16
+	1	f		/8.
+	1	c		/8
+	1	a		/8
+	1	a		/4
+
+	// 1. I can make the bad guys good for a weekend.
+	// 2. darling, I'm a nightmare dressed like a day dream.
+	1	c		/16		q=4, d=0.5, v=100
+	1	c		/8		q=2
+	1	c		/8		v=127
+	1	c		/16		q=2, v=100
+	1	c		/8		q=2
+END
+FUNCTION preChorus
+	// So it's gonna be forever
+	1	-		/8
+	1	f		/16		q=6, d=0.95, v=115
+	1	g		/8
+	1	a		/8
+	1	-		/4
+	2	f-2		/1+/1		d=1.0, v=60
+	3	a-,d	/1+/1
+	
+	// or it's gonna go down in flames
+	1	-		/8
+	1	f		/16		q=4
+	1	f		/8
+	1	a		/8
+	1	e		/8		q=2
+	1	f		/8
+	
+	// You can tell me when it's over, mm
+	1	-		/8
+	1	f		/16		q=6
+	1	g		/8
+	1	a		/8
+	1	-		/8
+	1	f		/8
+	2	d-2		/1+/1
+	3	a-,d	/1+/1
+	
+	// if the high was worth the pain.
+	1	-		/8
+	1	f		/16		q=2
+	1	f		/8		q=2
+	1	a		/8
+	1	e		/8		q=2
+	1	f		/8
+	
+	//Got a long list of ex-lovers;
+	1	-		/8
+	1	c+		/16		q=2
+	1	c+		/8
+	1	bb		/8
+	1	a		/8
+	1	bb		/8
+	1	a		/8
+	1	g		/8
+	2	g-2		/1+/1
+	3	d,f		/1+/1
+	
+	// they'll tell you I'm insane.
+	1	-		/8
+	1	g		/8		q=3
+	1	bb		/8
+	1	a		/8
+	1	g		/8
+	1	f		/8
+	
+	// 'Cause you know I love the players
+	1	-		/8
+	1	c+		/16		q=2
+	1	c+		/8		q=2
+	1	bb		/8
+	1	a		/8
+	1	bb		/8
+	1	a		/8
+	1	g		/8
+	2	f-2		/1+/1
+	3	d,f		/1+/1
+	
+	// and you love the game.
+	1	-		/8
+	1	f		/8
+	{
+		1	d,f,bb	/4		m, v=50
+		1	bb		/4		v=115
+	}	q=2
+	1	d,f,bb	/8		m, v=50
+	1	bb		/8		v=115
+	1	c,c+	/8		m, v=50
+	1	c+		/8		v=115
+END
+FUNCTION chorus
+	// 'Cause we're young and we're reckless
+	1	-		/8
+	1	f		/16		q=2
+	1	f		/8
+	1	f		/16		q=2
+	1	g		/8
+	1	a		/8
+	1	-		/4
+	2	f-2		/1+/1
+	3	d,a-	/1+/1
+	4	-		/8		v=100,d=1.0
+	4	f		/16		q=2
+	4	f,c,a-	/8
+	4	f		/16		q=2
+	4	g,bb-	/8
+	4	c,a		/4.
+	
+	// we'll take this way too far.
+	1	-		/8
+	1	f		/8		q=3
+	1	a		/8
+	1	e		/8		q=2
+	1	f		/8	
+	4	-		/8
+	4	f		/8
+	4	f,c,a-	/8
+	4	f		/8
+	4	a,c		/8
+	4	e		/8
+	4	e,c,g-	/8
+	4	f,a-	/8
+	
+	// It'll leave you breathless, mm,
+	1	-		/8
+	1	f		/16		q=2
+	1	f		/8		q=2
+	1	g		/8
+	1	a		/8
+	1	-		/8
+	1	f		/8
+	2	d-2		/1+/1
+	3	d,a-	/1+/1
+	4	-		/8
+	4	f		/16		q=2
+	4	f,d,a-	/8
+	4	f,a-	/8
+	4	g,bb-	/8
+	4	a,c		/4
+	4	f,d,a-	/8
+	
+	// or with a nasty scar.
+	1	-		/8
+	1	f		/8		q=3
+	1	a		/8
+	1	e		/8		q=2
+	1	f		/8
+	4	-		/8
+	4	f		/8
+	4	f,d,a-	/8
+	4	f		/8
+	4	a,c		/8
+	4	e		/8
+	4	e,c,g-	/8
+	4	f,c		/8
+	
+	// Got a long list of ex-lovers;
+	1	-		/8
+	1	c+		/16		q=2
+	1	c+		/8
+	1	bb		/8
+	1	a		/8
+	1	bb		/8
+	1	a		/8
+	1	g		/8
+	2	g-2		/1+/1
+	3	d,f		/1+/1
+	4	-		/8
+	4	c+		/16		q=2
+	4	c+		/8
+	4	bb		/8
+	4	a		/8
+	4	bb		/8
+	4	a		/8
+	4	g		/8
+	
+	// they'll tell you I'm insane.
+	1	-		/8
+	1	g		/8		q=3
+	1	bb		/8
+	1	a		/8
+	1	g		/8
+	1	f		/8
+	4	-		/8
+	4	g		/8		q=3
+	4	bb		/8
+	4	a		/8
+	4	g		/8
+	4	f		/8
+	
+	// But I've got a blank space, ba-
+	1	-		/16
+	1	f		/16
+	1	g		/8
+	1	g		/16
+	1	f		/16
+	1	g		/8.
+	1	g		/16+/8
+	1	g		/16
+	1	f		/16
+	
+	// -by (included in chorus instead of part)
+	1	d		/8
+	1	d		/4.
+	2	bb-3	/1+/2
+	3	d,bb-	/1+/2
+END
+FUNCTION bridge
+	// Boys only want (3 & 7/8 bar)
+	1	f		/4.
+	1	e		/16
+	1	e		/8.
+	1	d		/4
+
+	// love if it is torture
+	1	c		/4
+	1	bb-		/16
+	1	bb-		/8.
+	1	bb-		/4
+	1	a-		/4
+
+
+	//Don't say I didn't,
+	1	-		/8
+	1	f		/4.
+	1	e		/16
+	1	e		/8.
+	1	d		/16
+	1	d		/8.
+
+	// say I didn't warn you
+	1	c		/16
+	1	c		/8.
+	1	bb-		/16
+	1	bb-		/8.
+	1	bb-		/4
+	1	a-		/4
+END
+
+//##### SONG START #####//
+
+CALL backgroundChimes
+p	hc			/4		v=115
+p	sd2			/4
+{
+	p	-		/4
+	p	sd2		/4
+} q=3
+
+*
+CALL backgroundChimes q=7
+// first bar
+0	c+2		/8		v=75
+0	c+2		/4
+0	f+		/8
+0	f+		/2
+CALL drumsVerse1	q=4
+CALL drumsVerse2 	q=4
+CALL verse
+*
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=4
+CALL preChorus
+CALL drumsPreChorus2
+*
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=3
+CALL chorus
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/8
+p	hhp,sd2,bd2	/8
+p	hhp			/8
+p	hhp,sd2		/8		q=2
+p	hhp			/8
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/4
+0	c+2			/8
+0	c+2			/4
+0	f+			/8
+0	f+			/2
+	
+0	a+			/8
+0	a+			/4
+0	f+			/8
+
+*
+
+//**** Part 1 ****//
+// and I'll write your name.
+1	-		/16
+1	c		/16
+1	a		/8
+1	f		/8
+1	f		/16
+1	f		/16+/8
+
+
+0	-		/2
+CALL backgroundChimes
+
+p	-		/2
+p	hc,bd2	/8.
+p	bd2		/16
+p	sd2		/8
+p	bd2		/8
+p	-		/4
+p	sd2		/4
+
+p	bd2		/8.
+p	bd2		/16
+p	sd2		/8
+p	bd2		/8
+p	-		/8
+p	bd2		/8
+p	sd2		/4
+
+*
+
+CALL backgroundChimes q=7
+// first bar
+0	c+2		/8		v=75
+0	c+2		/4
+0	f+		/8
+0	f+		/2
+
+CALL drumsVerse3  q=4
+CALL drumsVerse4  q=3
+
+p	hhp,hc,bd2	/16
+p	hhp			/16		q=2
+p	hhp,bd2		/16
+p	hhp,sd2		/8
+p	hhp,bd2		/8
+p	-			/4
+p	hhp,sd2		/8
+p	hhp			/16		q=2
+	
+p	hhp,bd2		/16
+p	hhp			/16		q=2
+p	hhp,bd2		/16
+p	hhp,sd2		/8
+p	hhp,bd2		/8
+p	-			/4
+
+CALL verse
+*
+
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=4
+CALL preChorus
+CALL drumsPreChorus2
+
+*
+
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=3
+CALL chorus
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/8
+p	hhp,sd2,bd2	/8
+p	hhp			/8
+p	hhp,sd2		/8		q=2
+p	hhp			/8
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/4
+0	c+2			/8
+0	c+2			/4
+0	f+			/8
+0	f+			/2
+	
+0	a+			/8
+0	a+			/4
+0	f+			/8
+
+*
+
+//**** Part 2 ****//
+// and I'll write your name.
+1	-		/16
+1	c		/16
+1	a		/8
+1	f		/8
+1	f		/16+/8		q=2 //goes into next bar
+
+5	-		/2
+p	-		/2
+
+
+//**** Bridge ****//
+CALL bridge
+5	-		/1		q=2
+
+5	-		/8
+5	a-		/4.
+5	g-		/16
+5	g-		/8.
+5	f-		/16
+5	f-		/8.
+
+5	f-		/16
+5	f-		/8.
+5	d-		/16
+5	d-		/8.
+5	d-		/4
+5	c-		/4
+
+{
+	p	hc		/4
+	p	sd2		/4
+	p	-		/4
+	p	sd2		/4
+
+	p	-		/4
+	p	sd2		/4
+	p	-		/4
+	p	sd2		/4
+}	q=2
+
+*
+
+1	-		/8
+CALL bridge
+
+5	-		/8
+5	a-		/4.
+5	g-		/16
+5	g-		/8.
+5	f-		/4
+
+5	f-		/4
+5	d-		/16
+5	d-		/8.
+5	d-		/4
+5	c-		/4
+
+5	-		/8
+5	a-,c	/4.
+5	g-,c	/16
+5	g-,c	/8.
+5	f-,c	/16
+5	f-,c	/8.
+
+5	bb-,f-	/16
+5	bb-,f-	/8.
+5	g-,d-	/16
+5	g-,d-	/8.
+5	g-,d-	/4
+5	f-,c-	/4
+
+p	hc,bd2		/8.
+p	sm,bd2		/16
+p	sd2			/8
+p	sm,bd2		/8
+p	-			/4
+p	st,sd2		/4
+
+p	sm,bd2		/8.
+p	sm,bd2		/16
+p	sd2			/8
+p	sm,bd2		/8
+p	-			/8
+p	sm,bd2		/8
+p	sd2			/4
+
+*
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=4
+CALL preChorus
+CALL drumsPreChorus2
+*
+
+CALL drumsPreChorus1	q=3
+CALL backgroundChimes	q=3
+CALL chorus
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/8
+p	hhp,sd2,bd2	/8
+p	hhp			/8
+p	hhp,sd2		/8		q=2
+p	hhp			/8
+
+p	hhp,sd2,bd2	/8
+p	hhp			/16
+p	sd2,bd2		/16
+p	hhp,sd2		/4
+0	c+2			/8
+0	c+2			/4
+0	f+			/8
+0	f+			/2
+	
+0	a+			/8
+0	a+			/4
+0	f+			/8
+
+*
+
+//**** Part 1 ****//
+// and I'll write your name.
+1	-		/16
+1	c		/16
+1	a		/8
+1	f		/8
+1	f		/16
+1	f		/16+/4
+
+0	-		/1
+CALL backgroundChimes
+
+p	-		/1
+{
+	p	hc		/4
+	p	sd2		/4
+	p	-		/4
+	p	sd2		/4
+
+	p	-		/4
+	p	sd2		/4
+	p	-		/4
+	p	sd2		/4
+}	q=2
+
+0	c+2		/8		v=70
+0	c+2		/4		v=65
+0	f+		/8		v=60
+0	f+		/2		v=55
+
+0	a+		/8		v=50
+0	a+		/4		v=45
+0	f+		/8		v=40
+0	f+		/2		v=35
+
+p	hc		/4	v=110
+p	sd2		/4	v=100
+p	-		/4	v=90
+p	sd2		/4	v=80
+
+p	-		/4	v=70
+p	sd2		/4	v=60
+p	-		/4	v=50
+p	sd2		/4	v=40
